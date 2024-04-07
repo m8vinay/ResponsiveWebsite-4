@@ -108,6 +108,7 @@ a {
     width: 55vw;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-left: 12vw;
     border-top: 0.8px solid black;
     border-bottom: 0.8px solid black;
@@ -116,14 +117,11 @@ a {
 
 .section2 .start {
     font-size: 1.5rem;
-    padding-right: 46vw;
 
 }
 
-.start .end i {
+.end i {
     font-size: 1.5rem;
-
-
 }
 
 .section2 .end svg {
@@ -134,7 +132,6 @@ a {
     padding-top: 1vw;
     margin-left: 12vw;
     margin-right: 50vw;
-
 }
 
 .section3 p {
@@ -183,29 +180,28 @@ a {
     border-bottom: 1px solid black;
 }
 
-.related{
+.related {
     position: absolute;
     top: 65%;
     left: 50%;
     height: 43vh;
     width: 17vw;
-   
     background-color: white;
     border: 1px solid #DCDCDC;
     box-shadow: 0 0 2px black;
 }
 
-.related-text{
+.related-text {
     height: 5vh;
     width: 6vw;
     color: #FFFF;
     background: #000000;
     text-transform: uppercase;
-    padding: 10px 0px 10px 10px ;
+    padding: 10px 0px 10px 10px;
     margin-left: 1.5vw;
 }
 
-.related h3{
+.related h3 {
     font-size: 0.95rem;
     padding-left: 0px;
     padding-top: 10px;
@@ -215,16 +211,125 @@ a {
     border-bottom: 1px solid black;
 }
 
-.section6{
+.section6 {
     position: absolute;
     top: 60%;
     left: 12%;
 }
 
-.section6 p{
-   padding-top: 20px;
+.section6 p {
+    padding-top: 20px;
 }
 
-.section6 h1{
-   padding-top: 20px;
+.section6 h1 {
+    padding-top: 20px;
+}
+
+@media (max-width:900px) {
+    .nav-down {
+        height: 8vh;
+        width: 95vw;
+        border-top: 1px solid #e7e7e7;
+        border-bottom: 1px solid #e7e7e7;
+        background: #FCFCFC;
+        padding-left: 8.5vw;
+        padding-top: 2vh;
+    }
+
+    .nav-down p {
+        font-size: 0.9rem;
+    }
+
+    .section2 {
+        height: 4vh;
+        width: 84vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 12vw;
+        border-top: 0.8px solid black;
+        border-bottom: 0.8px solid black;
+    }
+
+    .start {
+        height: 5vh;
+        width: 12vw;
+        overflow-x: hidden;
+        font-size: 1.4rem;
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .end {
+        height: 5vh;
+        width: 4vw;
+        font-size: 1.4rem;
+        margin-top: 10px;
+
+    }
+
+    .section3 {
+        padding-top: 1vw;
+        width: 53%;
+    }
+
+    .section3 p {
+        font-size: 1.3rem;
+        line-height: 25px;
+    }
+
+    .section4 {
+        top: 38%;
+        left: 68%;
+        width: 28vw;
+        height: 25vh;
+    }
+
+    .section5-top {
+        display: none;
+
+    }
+
+    .related {
+        left: 75%;
+        height: 50vh;
+        width: 24vw;
+
+    }
+
+    .related-text {
+        width: 11vw;
+    }
+
+    .section6 {
+        position: absolute;
+        top: 65%;
+        left: 10%;
+        margin-right: 100px;
+    }
+}
+
+@media (max-width:600px) {
+    .section3 {
+        padding-top: 1vw;
+        width: 90vw;
+    }
+
+    .section6 {
+        position: absolute;
+        top: 105%;
+        left: 10%;
+        margin-right: 50px;
+    }
+
+    .related {
+        display: none;
+    }
+
+    .section4 {
+        width: 80vw;
+        height: 31vh;
+        top: 71%;
+        left: 15%;
+    }
 }
